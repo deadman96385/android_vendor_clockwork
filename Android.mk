@@ -366,3 +366,25 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
 LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ClockworkHomeGoogleRuntimeResourceOverlay
+LOCAL_MODULE_OWNER := Tristan Marsell
+LOCAL_SRC_FILES := vendor/overlay/ClockworkHomeGoogleRuntimeResourceOverlay.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_COPY_OUT_VENDOR)/overlay
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := ClockworkGmsRuntimeResourceOverlay
+LOCAL_MODULE_OWNER := Tristan Marsell
+LOCAL_SRC_FILES := vendor/overlay/ClockworkGmsRuntimeResourceOverlay.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_COPY_OUT_VENDOR)/overlay
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
