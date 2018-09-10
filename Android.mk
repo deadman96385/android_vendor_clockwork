@@ -114,6 +114,17 @@ LOCAL_MODULE_PATH := $(TARGET_OUT)/app
 LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := TalkbackWearPrebuilt
+LOCAL_MODULE_OWNER := Tristan Marsell
+LOCAL_SRC_FILES := app/TalkbackWearPrebuilt/TalkbackWearPrebuilt.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT)/app
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
+
 
 
 #############################
@@ -313,6 +324,17 @@ LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := GoogleExtServices
+LOCAL_MODULE_OWNER := Tristan Marsell
+LOCAL_SRC_FILES := priv-app/GoogleExtServices/GoogleExtServices.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := GooglePackageInstaller
 LOCAL_MODULE_OWNER := Tristan Marsell
 LOCAL_SRC_FILES := priv-app/GooglePackageInstaller/GooglePackageInstaller.apk
@@ -360,6 +382,17 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := WristGesturesTutorial
 LOCAL_MODULE_OWNER := Tristan Marsell
 LOCAL_SRC_FILES := priv-app/WristGesturesTutorial/WristGesturesTutorial.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_PATH := $(TARGET_OUT)/priv-app
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := FitnessPrebuiltWearable
+LOCAL_MODULE_OWNER := Tristan Marsell
+LOCAL_SRC_FILES := priv-app/FitnessPrebuiltWearable/FitnessPrebuiltWearable.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_MODULE_CLASS := APPS
