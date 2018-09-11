@@ -38,17 +38,6 @@ LOCAL_CERTIFICATE := platform
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := ClockworkPlayAutoInstallStub
-LOCAL_MODULE_OWNER := Tristan Marsell
-LOCAL_SRC_FILES := app/ClockworkPlayAutoInstallStub/ClockworkPlayAutoInstallStub.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_CERTIFICATE := platform
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleContactsSyncAdapter
 LOCAL_MODULE_OWNER := Tristan Marsell
 LOCAL_SRC_FILES := app/GoogleContactsSyncAdapter/GoogleContactsSyncAdapter.apk
@@ -125,6 +114,17 @@ LOCAL_DEX_PREOPT := false
 LOCAL_CERTIFICATE := platform
 include $(BUILD_PREBUILT)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := WearHandwriting
+LOCAL_MODULE_OWNER := Tristan Marsell
+LOCAL_SRC_FILES := app/WearHandwriting/WearHandwriting.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_CERTIFICATE := platform
+include $(BUILD_PREBUILT)
+
 
 
 #############################
@@ -169,29 +169,6 @@ include $(BUILD_PREBUILT)
 #############################
 
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := AnalogComplicationWatchFace
-LOCAL_MODULE_OWNER := Tristan Marsell
-LOCAL_SRC_FILES := priv-app/AnalogComplicationWatchFace/AnalogComplicationWatchFace.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_DEX_PREOPT := false
-LOCAL_CERTIFICATE := platform
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ChargingMode
-LOCAL_MODULE_OWNER := Tristan Marsell
-LOCAL_SRC_FILES := priv-app/ChargingMode/ChargingMode.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_DEX_PREOPT := false
-LOCAL_CERTIFICATE := platform
-include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := ClockworkAmbient
@@ -327,18 +304,6 @@ LOCAL_CERTIFICATE := platform
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := DigitalComplicationWatchFace
-LOCAL_MODULE_OWNER := Tristan Marsell
-LOCAL_SRC_FILES := priv-app/DigitalComplicationWatchFace/DigitalComplicationWatchFace.apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_DEX_PREOPT := false
-LOCAL_CERTIFICATE := platform
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleExtServices
 LOCAL_MODULE_OWNER := Tristan Marsell
 LOCAL_SRC_FILES := priv-app/GoogleExtServices/GoogleExtServices.apk
@@ -414,6 +379,18 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := FitnessPrebuiltWearable
 LOCAL_MODULE_OWNER := Tristan Marsell
 LOCAL_SRC_FILES := priv-app/FitnessPrebuiltWearable/FitnessPrebuiltWearable.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_DEX_PREOPT := false
+LOCAL_CERTIFICATE := platform
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := PrebuiltGmsCoreForClockwork_WearableSidecar
+LOCAL_MODULE_OWNER := Tristan Marsell
+LOCAL_SRC_FILES := priv-app/PrebuiltGmsCoreForClockwork_WearableSidecar/PrebuiltGmsCoreForClockwork_WearableSidecar.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_MODULE_CLASS := APPS
